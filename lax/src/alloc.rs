@@ -40,6 +40,7 @@ pub(crate) trait VecAssumeInit {
     /// https://doc.rust-lang.org/std/mem/union.MaybeUninit.html#method.slice_assume_init_ref
     unsafe fn slice_assume_init_ref(&self) -> &[Self::Elem];
 
+    #[allow(unused)]
     /// An replacement of unstable API
     /// https://doc.rust-lang.org/std/mem/union.MaybeUninit.html#method.slice_assume_init_mut
     unsafe fn slice_assume_init_mut(&mut self) -> &mut [Self::Elem];
